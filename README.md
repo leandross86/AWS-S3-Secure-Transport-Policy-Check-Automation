@@ -1,10 +1,14 @@
 # AWS S3 Secure Transport Policy
 
+<img src="./s3-image1.jpg"/>
+
 Este script Python, projetado para ser executado como uma função AWS Lambda, aborda o Controle 2.1.1 do CIS Benchmark para AWS Foundations. Especificamente, este script verifica se todos os buckets S3 em uma conta têm uma política que inclui a condição `aws:SecureTransport`. Se uma política não contiver essa condição, o script adicionará ou atualizará a política do bucket para incluir essa condição.
 
 ## Mitigação
 
 O controle 2.1.1 do CIS Benchmark visa garantir que as comunicações com o Amazon S3 sejam realizadas usando um transporte seguro (HTTPS). Ao negar explicitamente a ação S3 para solicitações que não usam transporte seguro, o script visa reforçar essa prática de segurança.
+
+<img src="./s3-image.jpg"/>
 
 ## Como Funciona
 
